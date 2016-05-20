@@ -191,6 +191,14 @@ input[type="checkbox"]:checked + span::before {
 
 }
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
 
 /* //////////////// Layout CSS //////////////////////////// */
 
@@ -251,6 +259,14 @@ padding: 10px 0;
 .zip_code{
   margin-top: 32px;
   
+}
+
+.first_newsletter_group {
+	float: left;
+}
+
+.second_newsletter_group {
+	float: right;
 }
 
 }

@@ -60,13 +60,15 @@
           
           <fieldset class="form-fieldset">
             <legend>Newsletter</legend>
-            
-            <div class="checkbox_input">
-            <p>Select the newsletter you would like to receive</p>
-             <label for="newsletter_html">
-              <input type="checkbox" name="newsletter_category" id="newsletter_html" value="html-news">
-              <span>HTML News</span><br>
-             </label>
+            <div class="newletter_option clearfix">
+             <div class="first_newsletter_group">
+              
+              <div class="checkbox_input">
+              <p>Select the newsletter you would like to receive</p>
+              <label for="newsletter_html">
+                <input type="checkbox" name="newsletter_category" id="newsletter_html" value="html-news">
+                <span>HTML News</span><br>
+              </label>
              <label for="newsletter_css">
               <input type="checkbox" name="newsletter_category" id="newsletter_css" value="css-news">
               <span>CSS News</span><br>
@@ -77,22 +79,57 @@
              </label>
             </div>
             
-            <div class="radio_input">
-              <p>Newletter Format</p>
-               <label for="format_html">
-                <input type="radio" name="newsletter_format" id="format_html" value="html-format">
-                <span>HTML</span><br>
-               </label>
-               <label for="format_plain">
-                <input type="radio" name="newsletter_format" id="format_plain" value="plain-format">
-                <span>Plain Text</span><br>
-               </label>
-            </div>
+              <div class="radio_input">
+                <p>Newletter Format</p>
+                <label for="format_html">
+                 <input type="radio" name="newsletter_format" id="format_html" value="html-format">
+                 <span>HTML</span><br>
+                </label>
+                <label for="format_plain">
+                  <input type="radio" name="newsletter_format" id="format_plain" value="plain-format">
+                  <span>Plain Text</span><br>
+                </label>
+              </div>
+              </div>
+
+             <div class="second_newsletter_group">
+                
+                <div class="checkbox_input">
+                  <p>How did you heared about us?</p>
+                  <label for="newsletter_treehouse">
+                    <input type="checkbox" name="newsletter_heard_about_us" id="newsletter_treehouse" value="treehouse">
+                    <span>Treehouse</span><br>
+                  </label>
+                  <label for="newsletter_friend">
+                    <input type="checkbox" name="newsletter_heard_about_us" id="newsletter_friend" value="friend">
+                    <span>A Friend</span><br>
+                  </label>
+                  <label for="newsletter_commercial">
+                    <input type="checkbox" name="newsletter_heard_about_us" id="newsletter_commercial" value="commercial">
+                    <span>Commercial</span><br>
+                  </label>
+               </div>
+
+                <div class="radio_input">
+                  <p>Would you recommend us to a friend?</p>
+                  <label for="recommend_yes">
+                    <input type="radio" name="newsletter_recommend" id="recommend_yes" value="yes_recommend">
+                    <span>Yes</span><br>
+                  </label>
+                  <label for="recommend_no">
+                    <input type="radio" name="newsletter_recommend" id="recommend_no" value="no_recommend">
+                    <span>No</span><br>
+                  </label>
+                </div>
+              </div>
+             </div>
              
-             <div class="textarea_section">
-              <p>Other topic you'de like to hear about</p>
-              <label for="other-topics"><span></span></label>
-              <textarea name="other-topics" id="other-topics"></textarea>
+             <div class="other_option">
+              <div class="textarea_section">
+                <p>Other topic you'de like to hear about</p>
+                <label for="other-topics"><span></span></label>
+                <textarea name="other-topics" id="other-topics"></textarea>
+              </div>
              </div>
           </fieldset>
           
