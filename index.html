@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Orian Levy Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+  <body>
+      <header class="page-header">
+        <h1>The Code Review</h1>
+      </header> 
+      
+      <main class="body-container">
+        <div class="form-head">
+          <h2>Signup for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        
+        <form class="form-wrapper">
+          
+          <fieldset class="form-fieldset">
+            <legend>Contact Information</legend>
+            <div class="row">
+              <label for="first_name" class="contact_label">Full Name</label><br>
+              <input type="text" name="user_name" id="first_name" placeholder="Required" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" class="contact_info" >
+            </div>
+            <div class="row">
+              <label for="email_address" class="contact_label">Email Address</label><br>
+              <input type="email" name="user_email" id="email_address" placeholder="Required" required  class="contact_info">
+            </div>
+            <div class="row">
+              <label for="phone_number" class="contact_label">Phone Number</label><br>
+              <input type="tel" name="user_phone" id="phone_number" class="contact_info">
+            </div>
+            <div class="row">
+              <label for="street_address" class="contact_label">Street Address</label><br>
+              <input type="text" name="user_address" id="street_address" class="contact_info">
+            </div>
+            <div class="row">
+              <label for="city" class="contact_label">City</label><br>
+              <input type="text" name="user_city" id="city" class="contact_info">
+            </div>
+            <div class="row">
+              <label for="state" class="contact_label">State</label><br>
+              <select name="user_state" id="state" class="drop">
+                <option value="choose-state">Choose State</option>
+                <option value="tel-aviv">Tel Aviv</option>
+                <option value="north-israel">North Israel</option>
+                <option value="south-israel">South Israel</option>
+              </select>
+             </div>
+             <div class="row">
+                <label for="zip_code" class="contact_label">Zip Code</label><br>
+                <input type="text" name="user_zip" id="zip_code" class="contact_info" >
+             </div>
+          </fieldset>
+          
+          <fieldset class="form-fieldset">
+            <legend>Newsletter</legend>
+            
+            <div class="checkbox_input">
+            <p>Select the newsletter you would like to receive</p>
+             <label for="newsletter_html">
+              <input type="checkbox" name="newsletter_category" id="newsletter_html" value="html-news">
+              <span>HTML News</span><br>
+             </label>
+             <label for="newsletter_css">
+              <input type="checkbox" name="newsletter_category" id="newsletter_css" value="css-news">
+              <span>CSS News</span><br>
+             </label>
+             <label for="newsletter_javascript">
+              <input type="checkbox" name="newsletter_category" id="newsletter_javascript" value="html-javascript">
+              <span>Javascript News</span><br>
+             </label>
+            </div>
+            
+            <div class="radio_input">
+              <p>Newletter Format</p>
+               <label for="format_html">
+                <input type="radio" name="newsletter_format" id="format_html" value="html-format">
+                <span>HTML</span><br>
+               </label>
+               <label for="format_plain">
+                <input type="radio" name="newsletter_format" id="format_plain" value="plain-format">
+                <span>Plain Text</span><br>
+               </label>
+            </div>
+             
+             <div class="textarea_section">
+              <p>Other topic you'de like to hear about</p>
+              <label for="other-topics"><span></span></label>
+              <textarea name="other-topics" id="other-topics"></textarea>
+             </div>
+          </fieldset>
+          
+          <input type="submit" class="submit-button" value="Sign Up">
+        
+        </form>
+      
+      </main>
+    
+    <footer class="page-footer">
+        <p>Copyright The Code Review</p>
+    </footer>
+  </body>
+</html>
